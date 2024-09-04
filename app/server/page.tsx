@@ -11,7 +11,7 @@ export default async function Page() {
     <div>
         <p>render dữ liênụ bên server</p>
       {users.map((item: any) => {
-        return <li>{item.name}</li>;
+        return <li key={item.id}>{item.name}</li>;
       })}
     </div>
   );
