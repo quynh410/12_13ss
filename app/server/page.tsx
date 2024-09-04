@@ -5,7 +5,7 @@ async function GetUser() {
   const data = await res.json();
   return data;
 }
-export default async function page() {
+export default async function Page() {
   const users = await GetUser();
   return (
     <div>
